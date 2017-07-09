@@ -7,6 +7,8 @@
 #include <vector>
 #include <string>
 #include <iterator>
+#include <cmath>
+#include <ctime>
 
 using std::vector;
 using std::string;
