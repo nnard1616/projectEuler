@@ -9,6 +9,7 @@
 #include <iterator>
 #include <cmath>
 #include <ctime>
+#include <sstream>
 
 using std::vector;
 using std::string;
