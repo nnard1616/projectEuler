@@ -19,7 +19,30 @@ using std::vector;
 using std::string;
 using std::cout;
 using std::endl;
+using std::list;
 
-int return_one();
+namespace common
+{
+  template <typename T>
+  long double logN(T& base, T& power);
 
+  bool is_prime(long long n);
+  vector<long long> prime_factors(long long n);
+
+  template <typename T>
+  void print(T begin, T end)
+  {
+    for (auto it = begin; it != end; ++it)
+      cout << *it << ' ';
+    cout << endl;
+  }
+  template <typename T>
+  void print(T in)
+  {
+    for (auto it = in.begin(); it != in.end(); ++it)
+      cout << *it << ' ';
+    cout << endl;
+  }
+  vector<long long> divisors(long long n);
+}
 #endif  // COMMON_HPP
