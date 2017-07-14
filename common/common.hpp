@@ -15,6 +15,7 @@
 #include <algorithm>
 #include <math.h>
 
+
 using std::vector;
 using std::string;
 using std::cout;
@@ -26,8 +27,10 @@ namespace common
   template <typename T>
   long double logN(T& base, T& power);
 
+
   bool is_prime(long long n);
   vector<long long> prime_factors(long long n);
+
 
   template <typename T>
   void print(T begin, T end)
@@ -36,6 +39,8 @@ namespace common
       cout << *it << ' ';
     cout << endl;
   }
+
+
   template <typename T>
   void print(T in)
   {
@@ -43,6 +48,9 @@ namespace common
       cout << *it << ' ';
     cout << endl;
   }
+
+
   vector<long long> divisors(long long n);
+  vector<string> split(const string& s, char delim);
 }
 #endif  // COMMON_HPP
