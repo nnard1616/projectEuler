@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 project(projectEuler)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -larmadillo -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -std=c++14")
 #-larmadillo
 include_directories(${PROJECT_SOURCE_DIR})
 include_directories(${CMAKE_BINARY_DIR})
@@ -9,12 +9,12 @@ include_directories(${CMAKE_BINARY_DIR})
 add_definitions("-Wall -Wextra ")
 
 add_subdirectory(common)
-add_subdirectory("problems/p102")
+add_subdirectory(problems/p103)
 
 file(GLOB apps_source "apps/*.cpp")
 list(SORT apps_source)
 
-set(exec_dependencies common p102)
+set(exec_dependencies common p103)
 
 message(STATUS "\n   Applications: ")
 foreach(app_src_file ${apps_source})
