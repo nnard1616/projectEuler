@@ -1,6 +1,6 @@
 #include "p103.hpp"
 
-namespace p103
+namespace problems
 {
   int p103()
   {
@@ -103,10 +103,11 @@ namespace p103
     for (auto it = sizeSums.begin(); it != sizeSums.end(); ++it)
     {
       dif = it->first - prevSize;
+      cout << it->first << ',' << it->second << endl;
       if ((dif == 0) || (dif == -1))
       {
         prevSize = it->first;
-        if (prevSum != it->second)
+        if (prevSum != it->second)  // subsets can't equal each other
           prevSum = it->second;
         else
           return false;
@@ -121,6 +122,7 @@ namespace p103
   }
 
 
+  // only checks bipartitions that make the complete set combined.
   bool partitions(int n,
                   int r,
                   const vector<int>& N,

@@ -23,6 +23,15 @@ namespace common
   }
 
 
+  vector<int> strings_to_ints(vector<string> in)
+  {
+    vector<int> ints;
+    for (auto it = in.begin(); it != in.end(); ++it)
+      ints.push_back(std::stoi(*it));
+    return ints;
+  }
+
+
   /*--- Pythonic Range Functions  --------------------------------------------*/
   /*--------------------------------------------------------------------------*/
 

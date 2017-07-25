@@ -42,11 +42,7 @@ namespace common
 
   vector<string> split(const string& s, char delim);
 
-  template <typename Integral>
-  string concatenate_integers(vector<Integral>& nums)
-  {
-    return concatenate_integers(nums.begin(), nums.end());
-  }
+  vector<int> strings_to_ints(vector<string> in);
 
   template <typename ForwardIterator>
   string concatenate_integers(ForwardIterator first, ForwardIterator last)
@@ -59,6 +55,12 @@ namespace common
     }
 
     return cat;
+  }
+
+  template <typename Integral>
+  string concatenate_integers(vector<Integral>& nums)
+  {
+    return concatenate_integers(nums.begin(), nums.end());
   }
 
   /*--- Pythonic Range Functions  --------------------------------------------*/

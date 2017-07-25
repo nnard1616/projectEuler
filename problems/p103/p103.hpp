@@ -4,7 +4,7 @@
 #include "common/common.hpp"
 
 
-namespace p103
+namespace problems
 {
   int p103();
 
