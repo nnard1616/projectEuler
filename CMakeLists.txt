@@ -9,12 +9,12 @@ include_directories(${CMAKE_BINARY_DIR})
 add_definitions("-Wall -Wextra ")
 
 add_subdirectory(common)
-add_subdirectory(problems/p103)
+add_subdirectory(problems/p104)
 
 file(GLOB apps_source "apps/*.cpp")
 list(SORT apps_source)
 
-set(exec_dependencies common p103)
+set(exec_dependencies common p104)
 
 message(STATUS "\n   Applications: ")
 foreach(app_src_file ${apps_source})
