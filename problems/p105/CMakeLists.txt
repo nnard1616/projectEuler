@@ -7,7 +7,7 @@ LIST(SORT lib_source)
 
 message(STATUS "Configuring library: ${dir_name}")
 add_library(${dir_name} ${lib_source})
-target_link_libraries(p105 p103 common)
+target_link_libraries(p105 p103 p106 common)
 
 set(LIBRARY_INSTALL_PATH ${CMAKE_INSTALL_PREFIX}/lib)
 set(HEADER_INSTALL_PATH ${CMAKE_INSTALL_PREFIX}/include)

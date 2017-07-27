@@ -11,11 +11,12 @@ add_definitions("-Wall -Wextra ")
 add_subdirectory(common)
 add_subdirectory(problems/p103)
 add_subdirectory(problems/p105)
+add_subdirectory(problems/p106)
 
 file(GLOB apps_source "apps/*.cpp")
 list(SORT apps_source)
 
-set(exec_dependencies common p103 p105)
+set(exec_dependencies common p103 p105 p106)
 
 message(STATUS "\n   Applications: ")
 foreach(app_src_file ${apps_source})

@@ -122,6 +122,13 @@ namespace common
     return sum(in.begin(), in.end());
   }
 
+  template <typename NumericalContainer>
+  double mean(NumericalContainer& in)
+  {
+    return (double)sum(in.begin(), in.end()) / in.size();
+  }
+
+
   template <typename Integral>
   bool is_prime(Integral n)
   {
@@ -136,9 +143,20 @@ namespace common
       return true;
     if (n == 3)
       return true;
-    for (Integral i = 2; i * i <= n; ++i)
+    if (n % 2 == 0)
+      return false;
+    if (n % 3 == 0)
+      return false;
+    Integral step = 2;
+    Integral i = 5;
+
+    while (i * i <= n)
+    {
       if (n % i == 0)
         return false;
+      i += step;
+      step = 6 - step;
+    }
     return true;
   }
 
