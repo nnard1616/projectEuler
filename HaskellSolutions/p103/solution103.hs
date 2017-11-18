@@ -1,7 +1,7 @@
 module Solution103 where
 import Data.List
 
-deltas = mapM (const [-4..4]) [1..7] --7 dimension displacement vectors with integer components varying from -4..4:
+deltas = mapM (const $ map (\x -> x/1) [-4..4]) [1..7] --7 dimension displacement vectors with integer components varying from -4..4:
                                      -- [ [-4,-4,-4,-4,-4,-4,-4], [-4,-4,-4,-4,-4,-4,-3],...]
 
 norm :: Floating r => [r] -> r
