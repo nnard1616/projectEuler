@@ -1,6 +1,6 @@
 # projectEuler
 
-Main problem website: [projecteuler.net](www.projecteuler.net)
+Main problem website: [projecteuler.net](https://projecteuler.net/)
 
 My soluitons to project euler problems in:
 
