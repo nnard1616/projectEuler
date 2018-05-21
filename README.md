@@ -1,5 +1,7 @@
 # projectEuler
 
+Main problem website: [projecteuler.net](www.projecteuler.net)
+
 My soluitons to project euler problems in:
 
 	python: problems 1-95 (most of them, some were "oneliners" that I may not have saved)
